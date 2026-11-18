@@ -1,0 +1,62 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution
+build/
+dist/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ChromaDB Vector Database
+data/chroma_db/
+chroma_db/
+
+# Uploaded Documents (customer data)
+data/uploads/
+data/documents/
+
+# SQLite Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pth
+*.pt
+*.pkl
+*.joblib

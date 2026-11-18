@@ -1,0 +1,42 @@
+
+# LLM and AI Framework
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langgraph
+
+# Embeddings
+sentence-transformers
+transformers
+
+# Vector Database
+chromadb
+langchain-chroma
+
+# PDF Processing
+pypdf
+
+# Backend
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Frontend
+streamlit
+
+# Database
+sqlalchemy
+
+# Environment Variables
+python-dotenv
+
+# Data Validation
+pydantic
+
+# HTTP Requests
+requests
+
+# Testing
+pytest
+httpx
