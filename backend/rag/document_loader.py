@@ -4,7 +4,7 @@ from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader, CSVLoader
 
 def validate_file(file_path: str | Path) -> Path:
-    path = path(file_path).expanduser().resolve()
+    path = Path(file_path).expanduser().resolve()
 
     if not path.is_file():
         raise FileNotFoundError(f"File not found:{path}")

@@ -26,6 +26,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-groq" },
+    { name = "langchain-huggingface" },
     { name = "langgraph" },
     { name = "pydantic" },
     { name = "pypdf" },
@@ -50,6 +51,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.2" },
     { name = "langchain-core", specifier = ">=1.8.2" },
     { name = "langchain-groq", specifier = ">=1.2.0" },
+    { name = "langchain-huggingface", specifier = ">=1.3.0" },
     { name = "langgraph", specifier = ">=1.2.22" },
     { name = "pydantic", specifier = ">=2.14.3" },
     { name = "pypdf", specifier = ">=7.1.0" },
@@ -1340,6 +1342,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d9/ed/85e0ccd6d86df1b98a4214dd130b52c2f2a0252f96a0abbfaef669142c3b/langchain_groq-1.2.0.tar.gz", hash = "sha256:b87117d16a16f68c9c2ca0f31820b46f7064c19563baca848893fcb0bcb41a97", size = 192627, upload-time = "2026-11-15T21:48:55.242Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d6/a8/94b6eb0d988034289f65b4728b543da7e25ec7a90dfe4bf29b4de3c69de9/langchain_groq-1.2.0-py3-none-any.whl", hash = "sha256:681901df6ec7cff0fc0b0c7dfe7d917f22ea0ec6dcd3ed2af918fdb2238cf99b", size = 21445, upload-time = "2026-11-15T21:48:53.995Z" },
+]
+
+[[package]]
+name = "langchain-huggingface"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "langchain-core" },
+    { name = "tokenizers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ed/14/9ace05172c24e010da5ecbdd65f564e6bf455e5dafbb5678289ff552b67c/langchain_huggingface-1.3.0.tar.gz", hash = "sha256:37acedc5e40d75045b3b9ceed4a29d62c1af306d17012b5d86c97966dd8561bb", size = 248826, upload-time = "2026-11-23T20:48:44.234Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/73/9a/4b082023122f3bcc4206071aaf7d3f1f65df627da8014f4a19952265ee0c/langchain_huggingface-1.3.0-py3-none-any.whl", hash = "sha256:2944be5f2de653944565b6696d4c1bb72b8b8c54f12fc531c0896637d941de23", size = 34627, upload-time = "2026-11-23T20:48:43.231Z" },
 ]
 
 [[package]]

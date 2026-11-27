@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent[1]
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(BASE_DIR/ ".env")
 
@@ -12,8 +12,6 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 LLM_MODEL = "openai/gpt-oss-20b"
 temperature = 0
 max_tokens_output = 800
-
-embedding_model = "sentence-transformers/all-MiniLM-L6-v2"
 
 chunk_size = 1000
 chunk_overlap = 200
@@ -31,6 +29,6 @@ def validate_config() -> None:
         )
 
 
-DOCUMENTS_DIR.mkdir(parents=True, exits_ok = True)
-CHROMA_DB_DIR.mkdir(parents=True, exits_ok = True)
+DOCUMENTS_DIR.mkdir(parents=True, exist_ok = True)
+CHROMA_DB_DIR.mkdir(parents=True, exist_ok = True)
 
